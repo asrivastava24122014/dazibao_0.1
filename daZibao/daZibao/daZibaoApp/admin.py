@@ -22,7 +22,7 @@ class WordpinyinAdmin(admin.ModelAdmin):
     raw_id_fields = ('wordpinyin_wordid','wordpinyin_pinyinid',)
     search_fields = ["=wordpinyin_wordid__wordchinese","=wordpinyin_pinyinid__pinyin"]
 
-# Word and translation
+# Word and translation admin
 class TranslationAdmin(admin.ModelAdmin):
     list_display = ("translationid","translation","translation_languageid")
     fields = ['translation','translation_languageid']
